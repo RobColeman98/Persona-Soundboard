@@ -23,6 +23,24 @@ export default class Home extends React.Component {
             style={{ width: 150, height: 150 }}
           />
         </View>
+        
+        
+        <View style={styles.ClassicPersona}>
+          <Image
+            source={require("../src/photos/Persona-1-Cover.png")}
+            style={{ width: 150, height: 150 }}
+          />
+
+          <Image
+            source={require("../src/photos/Innocent-Sin-Cover.png")}
+            style={{ width: 150, height: 150 }}
+          />
+
+          <Image
+            source={require("../src/photos/Eternal-Punishment-Cover.png")}
+            style={{ width: 150, height: 150 }}
+          />
+        </View>
 
         <Text style={styles.intro}>
           The Persona video game series is my favorite franchise of all time. I
@@ -45,19 +63,20 @@ export default class Home extends React.Component {
           cast of characters. However, what always kept me coming back for
           multiple playthroughs is the soundtrack. Persona has some of the best
           music I have ever heard from any video game franchise and while I
-          haven't played the first or second game yet, I'm willing to stand firm
-          on that.
+          haven't played the first game yet, I'm willing to stand firm on that.
         </Text>
 
         <Text></Text>
 
         <Text style={styles.intro}>
           Today, we are going to be listen to some of my favorite songs from
-          Persona 3, 4 ,& 5!
+          Persona franchise!
         </Text>
-        
-        <Button title="Next Page"
-        onPress={() => this.props.navigation.navigate("Persona3")}></Button>
+
+        <Button
+          title="Next Page"
+          onPress={() => this.props.navigation.navigate("Persona1")}
+        ></Button>
         <StatusBar style="auto" />
       </View>
     );
@@ -77,6 +96,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   Persona: {
+    margin: 20,
+    flexDirection: "row",
+  },
+
+  ClassicPersona: {
     margin: 20,
     flexDirection: "row",
   },

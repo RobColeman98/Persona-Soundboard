@@ -169,7 +169,7 @@ export default class Persona4 extends React.Component {
 
           <Button
             title="Next Page"
-            onPress={() => this.props.navigation.navigate("Velvet-Room")}
+            onPress={() => this.props.navigation.navigate("Velvet Room")}
             color="black"
           ></Button>
         </View>
